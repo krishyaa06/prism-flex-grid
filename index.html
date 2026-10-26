@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism Flex & Grid Lab · Prism Protocol</title>
+  <meta name="description" content="Visual Flexbox & CSS Grid playground with per-item controls, presets and CSS/Tailwind export." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism Flex & Grid Lab · Prism Protocol" />
+  <meta property="og:description" content="Visual Flexbox & CSS Grid playground with per-item controls, presets and CSS/Tailwind export." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#FFC857;--accent-2:#FF6B9A}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>Flex & Grid Lab</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-flex-grid" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">📐 Design Tools</p>
+      <h1>Flexbox & Grid, <em>by feel.</em></h1>
+      <p class="lead">Tweak every container and item property and watch the layout respond. Copy clean CSS or Tailwind classes when it looks right.</p>
+    </section>
+    <section class="lab">
+      <div class="card ctl">
+        <div class="tabs" id="mode"><button class="on" data-v="flex">Flexbox</button><button data-v="grid">Grid</button></div>
+        <div id="flexCtl"></div>
+        <div id="gridCtl" hidden></div>
+        <label class="field">Items <input type="range" id="count" min="1" max="12" value="5" /></label>
+        <div class="field"><span>Presets</span><div class="chips" id="presets"></div></div>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <div class="card-title"><h2>Preview</h2><span class="pill">click an item to edit it</span></div>
+          <div class="stage" id="stage"></div>
+        </div>
+        <div class="card" id="itemCard" hidden>
+          <div class="card-title"><h2 id="itemTitle">Item</h2><button class="btn small" id="itemReset">Reset item</button></div>
+          <div class="grid g4" id="itemCtl"></div>
+        </div>
+        <div class="card">
+          <div class="card-title"><h2>Code</h2><div class="row"><div class="tabs" id="fmt"><button class="on" data-v="css">CSS</button><button data-v="tw">Tailwind</button></div><button class="btn small primary" id="copy">Copy</button></div></div>
+          <pre class="out" id="code"></pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism Flex & Grid Lab · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-flex-grid" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

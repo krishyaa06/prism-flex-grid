@@ -1,0 +1,30 @@
+{
+  "name": "prism-flex-grid",
+  "version": "1.0.0",
+  "description": "Visual Flexbox & CSS Grid playground with per-item controls, presets and CSS/Tailwind export.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "flexbox",
+    "css-grid",
+    "css",
+    "tailwindcss",
+    "layout",
+    "playground",
+    "frontend",
+    "design-tools",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-flex-grid.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-flex-grid/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}
